@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartella Clinica di Visita Medica Specialistica di Medicina del Lavoro</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
+        .header { text-align: center; }
+        .form-section { margin-bottom: 20px; border: 1px solid #ccc; padding: 10px; }
+        .form-group { margin-bottom: 10px; }
+        label { display: inline-block; width: 200px; vertical-align: top; }
+        input[type="text"], input[type="date"], input[type="number"], select { width: 200px; }
+        textarea { width: 100%; height: 100px; }
+        .checkbox-group { display: inline-block; }
+        .checkbox-group label { width: auto; margin-right: 10px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1></h1>
+        <p><b>REGIONE PIEMONTE</b><br>
+        <b>AZIENDA OSPEDALIERO - UNIVERSITARIA<br>
+            CITTÀ DELLA SALUTE E DELLA SCIENZA DI TORINO</b><br>
+        C.so Bramante 88/90 - 10126 Torino<br>
+        C.F./P.I. 10771180014</p>
+        <p><b>Presidio Ospedaliero CTO</b><br>
+        Via Zuretti 29 - 10126 Torino<br>
+        Tel. 011/6933463</p>
+        <h2>CARTELLA CLINICA DI VISITA MEDICA SPECIALISTICA DI MEDICINA DEL LAVORO</h2>
+    </div>
+
+    <form>
+        <div class="form-section">
+            <div class="form-group">
+                <label for="date">DATA:</label>
+                <input type="date" id="date" name="date">
+            </div>
+            <div class="form-group">
+                <label for="company">AZIENDA:</label>
+                <input type="text" id="company" name="company">
+            </div>
+            <div class="form-group">
+                <label for="name">NOMINATIVO:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="birthdate">NATO A:</label>
+                <input type="text" id="birthdate" name="birthdate">
+            </div>
+            <div class="form-group">
+                <label for="birthdate">NATO IL:</label>
+                <input type="date" id="birthdate" name="birthdate">
+            </div>
+            <div class="form-group">
+                <label for="residence">RESIDENTE:</label>
+                <input type="text" id="residence" name="residence">
+            </div>
+            <div class="form-group">
+                <label for="job">MANSIONE:</label>
+                <input type="text" id="job" name="job">
+                <label><input type="checkbox" name="job_type" value="prevista"> PREVISTA</label>
+                <label><input type="checkbox" name="job_type" value="attuale"> ATTUALE</label>
+            </div>
+            
+        </div>
+
+        <div class="form-section">
+            <h2>ANAMNESI FAMILIARE</h2>
+            <div class="form-group">
+                <label for="father">Padre:</label>
+                <input type="text" id="father" name="father">
+            </div>
+            <div class="form-group">
+                <label for="mother">Madre:</label>
+                <input type="text" id="mother" name="mother">
+            </div>
+            <div class="form-group">
+                <label for="siblings">Fratelli/Sorelle:</label>
+                <input type="text" id="siblings" name="siblings">
+            </div>
+            <div class="form-group">
+                <label for="other_relatives">Rimanente gentilizio:</label>
+                <input type="text" id="other_relatives" name="other_relatives">
+            </div>
+            <div class="form-group">
+                <label for="married_at">Coniugati ad anni:</label>
+                <input type="number" id="married_at" name="married_at">
+            </div>
+            <div class="form-group">
+                <label for="spouse">Coniuge:</label>
+                <input type="text" id="spouse" name="spouse">
+            </div>
+            <div class="form-group">
+                <label for="children">Figli:</label>
+                <input type="text" id="children" name="children">
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h2>ANAMNESI FISIOLOGICA</h2>
+            <div class="form-group">
+                <label for="education">Scolarità:</label>
+                <input type="text" id="education" name="education">
+            </div>
+            <div class="form-group">
+                <label for="military_service">Servizio militare:</label>
+                <input type="text" id="military_service" name="military_service">
+            </div>
+            <div class="form-group">
+                <label for="menarche">Menarca:</label>
+                <input type="text" id="menarche" name="menarche">
+            </div>
+            <div class="form-group">
+                <label for="residence_history">Residenza:</label>
+                <input type="text" id="residence_history" name="residence_history">
+            </div>
+            <h3>Uso abituale di:</h3>
+            <div class="form-group">
+                <label for="wine">vino:</label>
+                <input type="text" id="wine" name="wine">
+            </div>
+            <div class="form-group">
+                <label for="liquor">superalcolici:</label>
+                <input type="text" id="liquor" name="liquor">
+            </div>
+            <div class="form-group">
+                <label>fumo:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="smoke_type" value="sigarette"> sigarette</label>
+                    <label><input type="checkbox" name="smoke_type" value="con_filtro"> con filtro</label>
+                    <label><input type="checkbox" name="smoke_type" value="senza_filtro"> senza filtro</label>
+                    <label><input type="checkbox" name="smoke_type" value="pipa"> pipa</label>
+                    <label><input type="checkbox" name="smoke_type" value="sigari"> sigari</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="cigarettes_per_day">N/p/die:</label>
+                <input type="number" id="cigarettes_per_day" name="cigarettes_per_day">
+            </div>
+            <div class="form-group">
+                <label for="smoking_years">anni:</label>
+                <input type="number" id="smoking_years" name="smoking_years">
+            </div>
+            <div class="form-group">
+                <label for="quit_smoking">ha smesso da anni:</label>
+                <input type="number" id="quit_smoking" name="quit_smoking">
+            </div>
+            <div class="form-group">
+                <label for="smoking_history">ha fumato per anni:</label>
+                <input type="number" id="smoking_history" name="smoking_history">
+            </div>
+            <div class="form-group">
+                <label for="drugs">farmaci:</label>
+                <input type="text" id="drugs" name="drugs">
+            </div>
+            <div class="form-group">
+                <label for="psychotropic">sostanze psicotrope:</label>
+                <input type="text" id="psychotropic" name="psychotropic">
+            </div>
+            <div class="form-group">
+                <label for="drug_sensitivity">sensibilità nota a medicamenti:</label>
+                <input type="text" id="drug_sensitivity" name="drug_sensitivity">
+            </div>
+            <div class="form-group">
+                <label for="other_substances">sensibilità nota ad altre sostanze:</label>
+                <input type="text" id="other_substances" name="other_substances">
+            </div>
+            <div class="form-group">
+                <label for="alvo">Alvo:</label>
+                <input type="text" id="alvo" name="alvo">
+            </div>
+            <div class="form-group">
+                <label for="diuresis">Diuresi:</label>
+                <input type="text" id="diuresis" name="diuresis">
+            </div>
+            <div class="form-group">
+                <label for="weight_changes">Variazioni peso corporeo:</label>
+                <input type="text" id="weight_changes" name="weight_changes">
+            </div>
+            <div class="form-group">
+                <label for="appetite">Appetito:</label>
+                <input type="text" id="appetite" name="appetite">
+            </div>
+            <div class="form-group">
+                <label for="sports">Attività sportive:</label>
+                <input type="text" id="sports" name="sports">
+            </div>
+            <div class="form-group">
+                <label for="other_habits">Altre abitudini di vita significative:</label>
+                <textarea id="other_habits" name="other_habits"></textarea>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h2>ACCERTAMENTI CLINICI RECENTI O DI PARTICOLARE RILIEVO:</h2>
+            <p>(tipo, esito, epoca e causa)</p>
+            <textarea id="recent_clinical_exams" name="recent_clinical_exams"></textarea>
+        </div>
+
+        <div class="form-section">
+            <h2>ANAMNESI PATOLOGICA REMOTA</h2>
+            <div class="form-group">
+                <label for="past_pathology_notes"></label>
+                <textarea id="past_pathology_notes" name="past_pathology_notes"></textarea>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h2>INTERVENTI CHIRURGICI:</h2>
+            <div class="form-group">
+                <label><input type="checkbox" name="surgery" value="tonsillectomia"> Tonsillectomia</label>
+            </div>
+            <div class="form-group">
+                <label><input type="checkbox" name="surgery" value="colecistectomia"> Colecistectomia</label>
+            </div>
+            <div class="form-group">
+                <label><input type="checkbox" name="surgery" value="emorroidectomia"> Emorroidectomia</label>
+            </div>
+            <div class="form-group">
+                <label><input type="checkbox" name="surgery" value="appendicectomia"> Appendicectomia</label>
+            </div>
+            <div class="form-group">
+                <label><input type="checkbox" name="surgery" value="gastroresezione"> Gastroresezione</label>
+            </div>
+            <div class="form-group">
+                <label><input type="checkbox" name="surgery" value="emiectomia"> Erniectomia</label>
+            </div>
+            <div class="form-group">
+                <label><input type="checkbox" name="surgery" value="safenectomia"> Safenectomia</label>
+            </div>
+            <div class="form-group">
+                <label for="other_surgery">altri:</label>
+                <input type="text" id="other_surgery" name="other_surgery">
+            </div>
+        </div>
+        <div class="form-section">
+            <h2>EVENTI TRUMATICI</h2>
+            <p>(Descrivendo epoca, natura e sede delle lesioni)</p>
+            <textarea id="recent_clinical_exams" name="recent_clinical_exams"></textarea>
+        </div>
+        <div class="form-section">
+            <h2>POSTUMI</h2>
+            <textarea id="recent_clinical_exams" name="recent_clinical_exams"></textarea>
+        </div><div class="form-section">
+            <h2>INFORTUNI SUL LAVORO</h2>
+            <textarea id="recent_clinical_exams" name="recent_clinical_exams"></textarea>
+        </div>
+    </div><div class="form-section">
+        <h2>MALATTIE PROFESSIONALI</h2>
+        <textarea id="recent_clinical_exams" name="recent_clinical_exams"></textarea>
+    </div>
+
+        <!-- Add more sections for EVENTI TRAUMATICI, INFORTUNI SUL LAVORO, MALATTIE PROFESSIONALI, etc. -->
+
+        <div class="form-section">
+            <h2>ESAME OBIETTIVO</h2>
+            <div class="form-group">
+                <label for="height">Altezza (cm):</label>
+                <input type="number" id="height" name="height">
+            </div>
+            <div class="form-group">
+                <label for="weight">Peso (Kg):</label>
+                <input type="number" id="weight" name="weight">
+            </div>
+            <!-- Add subsections for each body system (APPARATO TEGUMENTARIO E ANNESSI, APPARATO DIGERENTE, etc.) -->
+        </div>
+
+        <div class="form-section">
+            <h2>CONCLUSIONI:</h2>
+            <textarea id="conclusions" name="conclusions"></textarea>
+            <div class="form-group">
+                <label>MALATTIA PROFESSIONALE:</label>
+                <label><input type="radio" name="occupational_disease" value="no"> NO</label>
+                <label><input type="radio" name="occupational_disease" value="sospetta"> SOSPETTA</label>
+                <label><input type="checkbox" name="occupational_disease_action" value="da_rivalutare"> Da rivalutare</label>
+                <label><input type="checkbox" name="occupational_disease_action" value="da_notificare"> Da notificare</label>
+            </div>
+            <div class="form-group">
+                <label><input type="radio" name="occupational_disease" value="si"> SI (quale)</label>
+                <input type="text" id="occupational_disease_details" name="occupational_disease_details">
+            </div>
+            <div class="form-group">
+                <label for="prognosis">Prognosi: (GG)</label>
+                <input type="number" id="prognosis" name="prognosis">
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h2>DIAGNOSI MEDICO LAVORATIVA:</h2>
+            <div class="form-group">
+                <label>IDONEITÀ GENERICA:</label>
+                <label><input type="radio" name="generic_fitness" value="si"> SI</label>
+                <label><input type="radio" name="generic_fitness" value="no"> NO</label>
+            </div>
+            <div class="form-group">
+                <label for="specific_fitness_profile">PROFILO DESCRITTIVO DELL'IDONEITÀ SPECIFICA:</label>
+                <textarea id="specific_fitness_profile" name="specific_fitness_profile"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="specific_fitness_limits">LIMITI E CONDIZIONI EVENTUALI DELL'IDONEITÀ SPECIFICA ALLA MANSIONE:</label>
+                <textarea id="specific
